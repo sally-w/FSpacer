@@ -1,0 +1,36 @@
+﻿@model FSpacerFinal.Models.DriveCard
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DriveCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ratio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ratio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GearNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GearNumber)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DriveNumber">Edit</a> |
+    <a asp-action="Index">Return to List</a>
+</div>

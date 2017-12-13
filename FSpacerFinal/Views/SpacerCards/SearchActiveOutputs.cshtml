@@ -1,0 +1,145 @@
+﻿@model IEnumerable<SpacerCard>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@{
+    ViewData["Title"] = "SearchActiveOutputs";
+}
+
+<h2>SearchActiveOutputs</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalGearCaseDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalCarrierDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bearing)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HMDGear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalSpacerLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerticalGearCaseDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerticalCarrierDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GearMount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VMDGear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerticalSpacerLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Backlash)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalSetting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IntermediateSetting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutputSetting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HelicalGearNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HelicalPinionNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Drive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Operator)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model)
+            {
+            <tr>
+                <td>
+                    @s.Active
+                </td>
+                <td>
+                    @s.HorizontalGearCaseDeviation
+                </td>
+                <td>
+                    @s.HorizontalCarrierDeviation
+                </td>
+                <td>
+                    @s.Bearing
+                </td>
+                <td>
+                    @s.HMDGear
+                </td>
+                <td>
+                    @s.HorizontalSpacerLength
+                </td>
+                <td>
+                    @s.VerticalGearCaseDeviation
+                </td>
+                <td>
+                    @s.VerticalCarrierDeviation
+                </td>
+                <td>
+                    @s.GearMount
+                </td>
+                <td>
+                    @s.VMDGear
+                </td>
+                <td>
+                    @s.VerticalSpacerLength
+                </td>
+                <td>
+                    @s.Date
+                </td>
+                <td>
+                    @s.Backlash
+                </td>
+                <td>
+                    @s.HorizontalSetting
+                </td>
+                <td>
+                    @s.IntermediateSetting
+                </td>
+                <td>
+                    @s.OutputSetting
+                </td>
+                <td>
+                    @s.HelicalGearNumber
+                </td>
+                <td>
+                    @s.HelicalPinionNumber
+                </td>
+                <td>
+                    @s.DriveNumber
+                </td>
+                <td>
+                    @s.OperatorID
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

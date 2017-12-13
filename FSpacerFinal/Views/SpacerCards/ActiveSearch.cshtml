@@ -1,0 +1,11 @@
+﻿@model FSpacerFinal.Models.ActiveSearchModel
+@{
+    ViewData["Title"] = "ActiveSearch";
+}
+
+<h2>Search Active</h2>
+<form asp-controller="SpacerCards" asp-action="SearchActiveOutputs" method="post">
+    <label asp-for="SearchActiveCards"></label>
+    <input asp-for="SearchActiveCards" type="text" /><br />
+    <input type="submit" value="submit" /><br />
+</form>

@@ -1,0 +1,131 @@
+﻿@model FSpacerFinal.Models.SpacerCard
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Back Card Information</h2>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Active" /> @Html.DisplayNameFor(model => model.Active)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorizontalGearCaseDeviation" class="control-label"></label>
+                <input asp-for="HorizontalGearCaseDeviation" class="form-control" />
+                <span asp-validation-for="HorizontalGearCaseDeviation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorizontalCarrierDeviation" class="control-label"></label>
+                <input asp-for="HorizontalCarrierDeviation" class="form-control" />
+                <span asp-validation-for="HorizontalCarrierDeviation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bearing" class="control-label"></label>
+                <input asp-for="Bearing" class="form-control" />
+                <span asp-validation-for="Bearing" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HMDGear" class="control-label"></label>
+                <input asp-for="HMDGear" class="form-control" />
+                <span asp-validation-for="HMDGear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorizontalSpacerLength" class="control-label"></label>
+                <input asp-for="HorizontalSpacerLength" class="form-control" />
+                <span asp-validation-for="HorizontalSpacerLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerticalGearCaseDeviation" class="control-label"></label>
+                <input asp-for="VerticalGearCaseDeviation" class="form-control" />
+                <span asp-validation-for="VerticalGearCaseDeviation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerticalCarrierDeviation" class="control-label"></label>
+                <input asp-for="VerticalCarrierDeviation" class="form-control" />
+                <span asp-validation-for="VerticalCarrierDeviation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GearMount" class="control-label"></label>
+                <input asp-for="GearMount" class="form-control" />
+                <span asp-validation-for="GearMount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VMDGear" class="control-label"></label>
+                <input asp-for="VMDGear" class="form-control" />
+                <span asp-validation-for="VMDGear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VerticalSpacerLength" class="control-label"></label>
+                <input asp-for="VerticalSpacerLength" class="form-control" />
+                <span asp-validation-for="VerticalSpacerLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DriveNumber" class="control-label"></label>
+                <select asp-for="DriveNumber" class="form-control" asp-items="ViewBag.DriveNumber"></select>
+                <span asp-validation-for="DriveNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OperatorID" class="control-label"></label>
+                <select asp-for="OperatorID" class="form-control" asp-items="ViewBag.OperatorID"></select>
+                <span asp-validation-for="OperatorID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Backlash" class="control-label"></label>
+                <input asp-for="Backlash" class="form-control" />
+                <span asp-validation-for="Backlash" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorizontalSetting" class="control-label"></label>
+                <input asp-for="HorizontalSetting" class="form-control" />
+                <span asp-validation-for="HorizontalSetting" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IntermediateSetting" class="control-label"></label>
+                <input asp-for="IntermediateSetting" class="form-control" />
+                <span asp-validation-for="IntermediateSetting" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OutputSetting" class="control-label"></label>
+                <input asp-for="OutputSetting" class="form-control" />
+                <span asp-validation-for="OutputSetting" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HelicalGearNumber" class="control-label"></label>
+                <input asp-for="HelicalGearNumber" class="form-control" />
+                <span asp-validation-for="HelicalGearNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HelicalPinionNumber" class="control-label"></label>
+                <input asp-for="HelicalPinionNumber" class="form-control" />
+                <span asp-validation-for="HelicalPinionNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Return to Database</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

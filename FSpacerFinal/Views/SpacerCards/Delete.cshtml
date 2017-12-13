@@ -1,0 +1,141 @@
+﻿@model FSpacerFinal.Models.SpacerCard
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SpacerCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HorizontalGearCaseDeviation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HorizontalGearCaseDeviation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HorizontalCarrierDeviation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HorizontalCarrierDeviation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Bearing)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Bearing)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HMDGear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HMDGear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HorizontalSpacerLength)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HorizontalSpacerLength)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VerticalGearCaseDeviation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VerticalGearCaseDeviation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VerticalCarrierDeviation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VerticalCarrierDeviation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GearMount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GearMount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VMDGear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VMDGear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VerticalSpacerLength)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VerticalSpacerLength)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Backlash)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Backlash)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HorizontalSetting)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HorizontalSetting)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IntermediateSetting)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IntermediateSetting)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OutputSetting)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OutputSetting)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HelicalGearNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HelicalGearNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HelicalPinionNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HelicalPinionNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Drive)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Drive.DriveNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Operator)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Operator.ID)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-default">Return to Database</a>
+    </form>
+</div>

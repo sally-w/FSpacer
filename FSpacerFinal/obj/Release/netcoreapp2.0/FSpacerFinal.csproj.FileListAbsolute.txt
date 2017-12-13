@@ -1,0 +1,12 @@
+E:\FSpacer\FSpacerFinal\FSpacerFinal\bin\Release\netcoreapp2.0\FSpacerFinal.deps.json
+E:\FSpacer\FSpacerFinal\FSpacerFinal\bin\Release\netcoreapp2.0\FSpacerFinal.runtimeconfig.json
+E:\FSpacer\FSpacerFinal\FSpacerFinal\bin\Release\netcoreapp2.0\FSpacerFinal.runtimeconfig.dev.json
+E:\FSpacer\FSpacerFinal\FSpacerFinal\bin\Release\netcoreapp2.0\FSpacerFinal.dll
+E:\FSpacer\FSpacerFinal\FSpacerFinal\bin\Release\netcoreapp2.0\FSpacerFinal.pdb
+E:\FSpacer\FSpacerFinal\FSpacerFinal\obj\Release\netcoreapp2.0\FSpacerFinal.csprojResolveAssemblyReference.cache
+E:\FSpacer\FSpacerFinal\FSpacerFinal\obj\Release\netcoreapp2.0\FSpacerFinal.csproj.CoreCompileInputs.cache
+E:\FSpacer\FSpacerFinal\FSpacerFinal\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\FSpacer\FSpacerFinal\FSpacerFinal\obj\Release\netcoreapp2.0\FSpacerFinal.AssemblyInfoInputs.cache
+E:\FSpacer\FSpacerFinal\FSpacerFinal\obj\Release\netcoreapp2.0\FSpacerFinal.AssemblyInfo.cs
+E:\FSpacer\FSpacerFinal\FSpacerFinal\obj\Release\netcoreapp2.0\FSpacerFinal.dll
+E:\FSpacer\FSpacerFinal\FSpacerFinal\obj\Release\netcoreapp2.0\FSpacerFinal.pdb

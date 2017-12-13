@@ -1,0 +1,148 @@
+﻿@model IEnumerable<FSpacerFinal.Models.SpacerCard>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Database</h2>
+
+
+<table class="table">
+    <thead>
+        <tr style="vertical-align:middle">
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalGearCaseDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalCarrierDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bearing)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HMDGear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalSpacerLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerticalGearCaseDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerticalCarrierDeviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GearMount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VMDGear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VerticalSpacerLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Backlash)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorizontalSetting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IntermediateSetting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutputSetting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HelicalGearNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HelicalPinionNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Drive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Operator)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HorizontalGearCaseDeviation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HorizontalCarrierDeviation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bearing)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HMDGear)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HorizontalSpacerLength)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VerticalGearCaseDeviation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VerticalCarrierDeviation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GearMount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VMDGear)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VerticalSpacerLength)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Backlash)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HorizontalSetting)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IntermediateSetting)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OutputSetting)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HelicalGearNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HelicalPinionNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Drive.DriveNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Operator.ID)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-success">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-warning">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

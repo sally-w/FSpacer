@@ -1,0 +1,43 @@
+﻿@model FSpacerFinal.Models.DriveCard
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>DriveCard</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ratio" class="control-label"></label>
+                <input asp-for="Ratio" class="form-control" />
+                <span asp-validation-for="Ratio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GearNumber" class="control-label"></label>
+                <input asp-for="GearNumber" class="form-control" />
+                <span asp-validation-for="GearNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Return to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
